@@ -1,0 +1,225 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="CourseManagementSystem.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Course Management System</title>
+    
+    <!-- Bootstrap 5 CSS & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            --card-border-radius: 12px;
+        }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar-brand-custom {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #ffffff !important;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .main-navbar {
+            background: var(--primary-gradient);
+            box-shadow: 0 4px 20px -2px rgba(30, 58, 138, 0.25);
+        }
+
+        .nav-link-custom {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 500;
+            padding: 0.5rem 0.85rem !important;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .nav-link-custom:hover {
+            color: #ffffff !important;
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .page-header-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--card-border-radius);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card-custom {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--card-border-radius);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .badge-status-active {
+            background-color: #dcfce7;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+            font-weight: 600;
+            padding: 0.35rem 0.65rem;
+            border-radius: 20px;
+        }
+
+        .badge-status-inactive {
+            background-color: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+            font-weight: 600;
+            padding: 0.35rem 0.65rem;
+            border-radius: 20px;
+        }
+
+        .table-custom th {
+            background-color: #f1f5f9;
+            color: #475569;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            padding: 1rem 1.25rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .table-custom td {
+            padding: 1rem 1.25rem;
+            vertical-align: middle;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        footer {
+            margin-top: auto;
+            background: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            padding: 1.5rem 0;
+            color: #64748b;
+        }
+    </style>
+    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-lg main-navbar py-3">
+            <div class="container">
+                <a class="navbar-brand-custom" href="Default.aspx">
+                    <i class="bi bi-mortarboard-fill fs-4"></i>
+                    <span>Course Management</span>
+                </a>
+                
+                <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                    <i class="bi bi-list fs-2 text-white"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-3">
+                        <!-- Navigation for Authenticated Admin -->
+                        <asp:PlaceHolder ID="phAdminNav" runat="server" Visible="false">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="Index.aspx">
+                                    <i class="bi bi-collection me-1"></i> All Courses
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="Create.aspx">
+                                    <i class="bi bi-plus-circle me-1"></i> Add Course
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="Enrollments.aspx">
+                                    <i class="bi bi-people me-1"></i> Enrollments
+                                </a>
+                            </li>
+                        </asp:PlaceHolder>
+
+                        <!-- Navigation for Authenticated Student -->
+                        <asp:PlaceHolder ID="phStudentNav" runat="server" Visible="false">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="Index.aspx">
+                                    <i class="bi bi-journal-bookmark me-1"></i> Browse Courses
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="MyEnrollments.aspx">
+                                    <i class="bi bi-mortarboard me-1"></i> My Enrolled Courses
+                                </a>
+                            </li>
+                        </asp:PlaceHolder>
+                    </ul>
+                    
+                    <!-- Right-side User Status -->
+                    <div class="d-flex align-items-center gap-2">
+                        <!-- Logged In Controls -->
+                        <asp:PlaceHolder ID="phLoggedIn" runat="server" Visible="false">
+                            <span class="badge bg-white text-dark px-3 py-2 fw-semibold shadow-sm border d-flex align-items-center gap-1">
+                                <asp:Literal ID="litUserBadge" runat="server" />
+                            </span>
+                            <asp:PlaceHolder ID="phAdminAddBtn" runat="server" Visible="false">
+                                <a href="Create.aspx" class="btn btn-sm btn-light fw-semibold text-primary px-3 shadow-sm">
+                                    <i class="bi bi-plus-lg me-1"></i> New Course
+                                </a>
+                            </asp:PlaceHolder>
+                            <a href="Logout.aspx" class="btn btn-sm btn-outline-light px-3">
+                                <i class="bi bi-box-arrow-right me-1"></i> Sign Out
+                            </a>
+                        </asp:PlaceHolder>
+
+                        <!-- Anonymous Controls -->
+                        <asp:PlaceHolder ID="phAnonymous" runat="server" Visible="true">
+                            <a href="Login.aspx" class="btn btn-sm btn-light fw-semibold text-primary px-3 shadow-sm">
+                                <i class="bi bi-box-arrow-in-right me-1"></i> Sign In
+                            </a>
+                            <a href="Register.aspx" class="btn btn-sm btn-outline-light px-3">
+                                <i class="bi bi-person-plus me-1"></i> Register Student
+                            </a>
+                        </asp:PlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-4 flex-grow-1">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+        <footer>
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start">
+                <div>
+                    <strong>Course Management System</strong> &copy; <%: DateTime.Now.Year %> &bull; ASP.NET Web Forms (.aspx / .aspx.cs)
+                </div>
+                <div class="small">
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle">Admin & Student Roles</span>
+                    <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle ms-1">ADO.NET & SQL Server</span>
+                </div>
+            </div>
+        </footer>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
