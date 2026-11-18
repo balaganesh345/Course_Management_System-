@@ -11,9 +11,9 @@ namespace CourseManagementSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserRole"] == null || Session["UserRole"].ToString() != "Admin")
+            if (Session["UserRole"] == null || (Session["UserRole"].ToString() != "Admin" && Session["UserRole"].ToString() != "Instructor"))
             {
-                Response.Redirect("Index.aspx?msg=" + Server.UrlEncode("Access Denied: Admin privileges required."));
+                Response.Redirect("Index.aspx?msg=" + Server.UrlEncode("Access Denied: Instructor or Admin privileges required."));
                 return;
             }
 
@@ -29,7 +29,40 @@ namespace CourseManagementSystem
                     }
                 }
 
+                LoadStatistics();
                 BindAllEnrollments();
+            }
+        }
+
+        private void LoadStatistics()
+        {
+            try
+            {
+                string statsSql = @"
+                    SELECT 
+                        COUNT(1) AS TotalCount,
+                        ISNULL(SUM(CASE WHEN IsCompleted = 1 THEN 1 ELSE 0 END), 0) AS CompletedCount,
+                        ISNULL(SUM(CASE WHEN IsCompleted = 0 OR IsCompleted IS NULL THEN 1 ELSE 0 END), 0) AS InProgressCount
+                    FROM Enrollments";
+
+                DataTable dtStats = DBHelper.ExecuteSelect(statsSql);
+                if (dtStats.Rows.Count > 0)
+                {
+                    int total = Convert.ToInt32(dtStats.Rows[0]["TotalCount"]);
+                    int completed = Convert.ToInt32(dtStats.Rows[0]["CompletedCount"]);
+                    int inProgress = Convert.ToInt32(dtStats.Rows[0]["InProgressCount"]);
+
+                    litTotalCount.Text = total.ToString();
+                    litCompletedCount.Text = completed.ToString();
+                    litInProgressCount.Text = inProgress.ToString();
+
+                    double rate = total > 0 ? ((double)completed / total) * 100.0 : 0.0;
+                    litCompletionRate.Text = rate.ToString("F0") + "%";
+                }
+            }
+            catch (Exception)
+            {
+                // Fallback to defaults
             }
         }
 
@@ -63,6 +96,7 @@ namespace CourseManagementSystem
                 var parameters = new List<SqlParameter>();
                 string sql = @"
                     SELECT e.EnrollmentId, e.UserId, e.CourseId, e.EnrollmentDate, e.Status,
+                           e.IsCompleted, e.CompletionDate, e.QuizScore, e.QuizTotal,
                            u.Username, u.FullName, u.Email,
                            c.CourseName, c.CourseCode, c.InstructorName, c.Category, c.CourseFee
                     FROM Enrollments e
@@ -84,6 +118,16 @@ namespace CourseManagementSystem
                     parameters.Add(new SqlParameter("@CourseId", int.Parse(courseFilter)));
                 }
 
+                string completionFilter = ddlCompletionFilter.SelectedValue;
+                if (completionFilter == "Completed")
+                {
+                    sql += " AND e.IsCompleted = 1";
+                }
+                else if (completionFilter == "InProgress")
+                {
+                    sql += " AND (e.IsCompleted = 0 OR e.IsCompleted IS NULL)";
+                }
+
                 sql += " ORDER BY e.EnrollmentDate DESC";
 
                 DataTable dt = DBHelper.ExecuteSelect(sql, parameters.ToArray());
@@ -100,6 +144,7 @@ namespace CourseManagementSystem
         protected void btnFilter_Click(object sender, EventArgs e)
         {
             gvAllEnrollments.PageIndex = 0;
+            LoadStatistics();
             BindAllEnrollments();
         }
 
@@ -107,7 +152,9 @@ namespace CourseManagementSystem
         {
             txtStudentSearch.Text = string.Empty;
             ddlCourseFilter.SelectedIndex = 0;
+            if (ddlCompletionFilter != null) ddlCompletionFilter.SelectedIndex = 0;
             gvAllEnrollments.PageIndex = 0;
+            LoadStatistics();
             BindAllEnrollments();
         }
 

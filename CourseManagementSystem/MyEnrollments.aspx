@@ -92,23 +92,28 @@
                         </ItemTemplate>
                     </asp:TemplateField>
 
-                    <asp:TemplateField HeaderText="Status" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center">
+                    <asp:TemplateField HeaderText="Course & Quiz Status" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center">
                         <ItemTemplate>
-                            <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">
-                                <i class="bi bi-check-circle-fill me-1"></i><%# Eval("Status") %>
-                            </span>
+                            <%# Convert.ToBoolean(Eval("IsCompleted")) ? 
+                                "<span class='badge bg-success-subtle text-success border border-success-subtle px-2 py-1'><i class='bi bi-check-circle-fill me-1'></i>Course Completed</span>" +
+                                "<div class='mt-1'><span class='badge bg-primary px-2 py-1'>Quiz Score: " + Eval("QuizScore") + " / " + Eval("QuizTotal") + "</span></div>" :
+                                "<span class='badge bg-warning-subtle text-warning-emphasis border border-warning-subtle px-2 py-1'><i class='bi bi-hourglass-split me-1'></i>In Progress</span>"
+                            %>
                         </ItemTemplate>
                     </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="Actions" ItemStyle-HorizontalAlign="Right" HeaderStyle-HorizontalAlign="Right">
                         <ItemTemplate>
-                            <div class="btn-group btn-group-sm" role="group">
-                                <a href='<%# "Details.aspx?id=" + Eval("CourseId") %>' class="btn btn-outline-secondary" title="View Course Details">
-                                    <i class="bi bi-eye me-1"></i> Details
+                            <div class="d-flex justify-content-end gap-1">
+                                <a href='<%# "CourseStudy.aspx?id=" + Eval("CourseId") %>' class="btn btn-sm btn-primary fw-semibold px-3 shadow-sm" title="View Course Materials and Take 2-Question Quiz">
+                                    <i class="bi bi-journal-bookmark-fill me-1"></i> Study & Quiz
+                                </a>
+                                <a href='<%# "Details.aspx?id=" + Eval("CourseId") %>' class="btn btn-sm btn-outline-secondary" title="View Course Details">
+                                    <i class="bi bi-eye"></i>
                                 </a>
                                 <asp:LinkButton ID="btnDrop" runat="server" CommandName="DropCourse" CommandArgument='<%# Eval("EnrollmentId") %>' 
-                                    CssClass="btn btn-outline-danger" OnClientClick="return confirm('Are you sure you want to drop this course enrollment?');" title="Drop Course">
-                                    <i class="bi bi-x-circle me-1"></i> Drop
+                                    CssClass="btn btn-sm btn-outline-danger" OnClientClick="return confirm('Are you sure you want to drop this course enrollment?');" title="Drop Course">
+                                    <i class="bi bi-x-circle"></i>
                                 </asp:LinkButton>
                             </div>
                         </ItemTemplate>

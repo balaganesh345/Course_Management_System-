@@ -80,6 +80,14 @@ namespace CourseManagementSystem
             pnlMessage.Visible = false;
         }
 
+        protected void btnDemoInstructor_Click(object sender, EventArgs e)
+        {
+            txtUsername.Text = "instructor";
+            txtPassword.Text = "instructor123";
+            rblRole.SelectedValue = "Instructor";
+            pnlMessage.Visible = false;
+        }
+
         protected void btnDemoStudent_Click(object sender, EventArgs e)
         {
             txtUsername.Text = "student";

@@ -42,6 +42,17 @@
                 CssClass="alert alert-danger py-2 small mb-3" 
                 HeaderText="<strong>Please correct the following:</strong>" />
 
+            <!-- Register Role Selection -->
+            <div class="mb-3">
+                <label class="form-label fw-semibold small text-muted">Account Type <span class="text-danger">*</span></label>
+                <div class="d-flex gap-2">
+                    <asp:RadioButtonList ID="rblRegisterRole" runat="server" RepeatDirection="Horizontal" CssClass="d-flex gap-4">
+                        <asp:ListItem Text="<i class='bi bi-backpack me-1'></i> Student" Value="Student" Selected="True" />
+                        <asp:ListItem Text="<i class='bi bi-person-video3 me-1'></i> Instructor" Value="Instructor" />
+                    </asp:RadioButtonList>
+                </div>
+            </div>
+
             <!-- Full Name -->
             <div class="mb-3">
                 <label for="<%= txtFullName.ClientID %>" class="form-label fw-semibold small text-muted">Full Name <span class="text-danger">*</span></label>

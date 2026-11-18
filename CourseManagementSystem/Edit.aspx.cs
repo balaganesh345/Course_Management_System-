@@ -9,9 +9,9 @@ namespace CourseManagementSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserRole"] == null || Session["UserRole"].ToString() != "Admin")
+            if (Session["UserRole"] == null || (Session["UserRole"].ToString() != "Admin" && Session["UserRole"].ToString() != "Instructor"))
             {
-                Response.Redirect("Index.aspx?msg=" + Server.UrlEncode("Access Denied: Admin privileges required to edit courses."));
+                Response.Redirect("Index.aspx?msg=" + Server.UrlEncode("Access Denied: Instructor or Admin privileges required to edit courses."));
                 return;
             }
 

@@ -4,6 +4,7 @@ namespace CourseManagementSystem
     {
         protected global::System.Web.UI.WebControls.Literal litSubHeader;
         protected global::System.Web.UI.WebControls.PlaceHolder phAdminActions;
+        protected global::System.Web.UI.WebControls.PlaceHolder phAddCourseBtn;
         protected global::System.Web.UI.WebControls.PlaceHolder phStudentActions;
         protected global::System.Web.UI.WebControls.Panel pnlMessage;
         protected global::System.Web.UI.WebControls.Label lblMessage;

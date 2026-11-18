@@ -39,15 +39,24 @@ namespace CourseManagementSystem
 
         private void ConfigureRoleView()
         {
-            if (UserRole == "Admin")
+            if (UserRole == "Admin" || UserRole == "Instructor")
             {
                 phAdminActions.Visible = true;
+                phAddCourseBtn.Visible = (UserRole == "Admin");
                 phStudentActions.Visible = false;
-                litSubHeader.Text = "Administrative Course Management &mdash; Create, update, delete, and view courses.";
+                if (UserRole == "Admin")
+                {
+                    litSubHeader.Text = "Administrative Course Management &mdash; Create, update, delete, view courses, and manage instructors.";
+                }
+                else
+                {
+                    litSubHeader.Text = "Instructor Course Hub &mdash; Manage course files, text lessons, quizzes, and student completions.";
+                }
             }
             else
             {
                 phAdminActions.Visible = false;
+                phAddCourseBtn.Visible = false;
                 phStudentActions.Visible = true;
                 divStatusFilter.Visible = false;
                 string studentName = Session["FullName"] != null ? Session["FullName"].ToString() : "Student";
@@ -107,7 +116,7 @@ namespace CourseManagementSystem
                     parameters.Add(new SqlParameter("@Category", category));
                 }
 
-                if (UserRole == "Admin")
+                if (UserRole == "Admin" || UserRole == "Instructor")
                 {
                     string status = ddlStatus.SelectedValue;
                     if (!string.IsNullOrEmpty(status))
@@ -165,13 +174,13 @@ namespace CourseManagementSystem
                 var phAdmin = e.Row.FindControl("phAdminGridActions") as PlaceHolder;
                 var phStudent = e.Row.FindControl("phStudentGridActions") as PlaceHolder;
 
-                if (phAdmin != null) phAdmin.Visible = (UserRole == "Admin");
+                if (phAdmin != null) phAdmin.Visible = (UserRole == "Admin" || UserRole == "Instructor");
                 if (phStudent != null) phStudent.Visible = (UserRole == "Student");
             }
             else if (e.Row.RowType == DataControlRowType.EmptyDataRow)
             {
                 var phEmptyCreate = e.Row.FindControl("phEmptyCreate") as PlaceHolder;
-                if (phEmptyCreate != null) phEmptyCreate.Visible = (UserRole == "Admin");
+                if (phEmptyCreate != null) phEmptyCreate.Visible = (UserRole == "Admin" || UserRole == "Instructor");
             }
         }
 

@@ -10,7 +10,7 @@ namespace CourseManagementSystem
         {
             if (Session["UserRole"] == null || Session["UserRole"].ToString() != "Admin")
             {
-                Response.Redirect("Index.aspx?msg=" + Server.UrlEncode("Access Denied: Admin privileges required to add courses."));
+                Response.Redirect("Index.aspx?msg=" + Server.UrlEncode("Access Denied: Only Administrators can create courses."));
                 return;
             }
 

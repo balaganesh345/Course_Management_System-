@@ -5,6 +5,7 @@ namespace CourseManagementSystem
         protected global::System.Web.UI.WebControls.Panel pnlMessage;
         protected global::System.Web.UI.WebControls.Label lblMessage;
         protected global::System.Web.UI.WebControls.ValidationSummary valSummary;
+        protected global::System.Web.UI.WebControls.RadioButtonList rblRegisterRole;
         protected global::System.Web.UI.WebControls.TextBox txtFullName;
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFullName;
         protected global::System.Web.UI.WebControls.TextBox txtUsername;

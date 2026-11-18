@@ -1,0 +1,263 @@
+{
+   "checksum": "dd36430f2d08f33563f0468eb4a409fb",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13418656593863832",
+            "date_last_used": "13420045116485297",
+            "guid": "aea903ab-a2e2-4061-a8ff-1b6c32dcc7e5",
+            "id": "10",
+            "name": "Inbox (874) - balab7084_bcs27@mepcoeng.ac.in - Mepco Schlenk Engineering College, Sivakasi Mail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/#inbox",
+            "visit_count": 9
+         }, {
+            "date_added": "13382722333625209",
+            "date_last_used": "13419099430564066",
+            "guid": "d0d97fb0-50cc-47e1-add5-666685bd3e67",
+            "id": "11",
+            "name": "ChatGPT",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://chatgpt.com/",
+            "visit_count": 25
+         }, {
+            "date_added": "13382724672850215",
+            "date_last_used": "13417799549318886",
+            "guid": "a39775b3-91c0-45e1-be80-cb2fa91e94bc",
+            "id": "12",
+            "name": "Impartus",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://lcs.mepcoeng.ac.in/ilc/#/home",
+            "visit_count": 25
+         }, {
+            "date_added": "13384446538174631",
+            "date_last_used": "13418891371980741",
+            "guid": "98cbe485-7ed2-41b3-9dfc-16a42593b64f",
+            "id": "13",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "MSEC - College Management System",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://erp.mepcoeng.ac.in/student/StudentProfile.aspx",
+            "visit_count": 11
+         }, {
+            "date_added": "13385141415054140",
+            "date_last_used": "0",
+            "guid": "9d745693-5310-4e06-a91b-cedf519b73cf",
+            "id": "14",
+            "name": "Getting Started with Competitive Programming - Course",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://onlinecourses.nptel.ac.in/noc25_cs36/progassignment?action=list&name=520&post_submit=True&lang=py3&show_result=True&show_confirmation_message=True",
+            "visit_count": 0
+         }, {
+            "date_added": "13387095309766709",
+            "date_last_used": "13419008138648067",
+            "guid": "f8064716-0f76-4378-bcdd-0c7fe84875e8",
+            "id": "15",
+            "name": "GitHub Dashboard",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/dashboard",
+            "visit_count": 1
+         }, {
+            "date_added": "13389431198061012",
+            "date_last_used": "13419004807596591",
+            "guid": "b8fc564e-e8be-4fc4-aee4-8bca9bae355a",
+            "id": "16",
+            "name": "Full Video: Paththavaikkum | Devara | NTR | Janhvi Kapoor | Anirudh | Deepthi Suresh | Koratala Siva - YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=Q4zUoiJE478",
+            "visit_count": 7
+         }, {
+            "date_added": "13406227432288297",
+            "date_last_used": "13413309241263149",
+            "guid": "504c019d-e5dc-4c85-8989-34398340682d",
+            "id": "17",
+            "name": "Pookal Pookum Tharunam Song Download - MassTamilan",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://masstamilan.sbs/music/pookal-pookum-tharunam",
+            "visit_count": 2
+         }, {
+            "date_added": "13409941199815539",
+            "date_last_used": "13409941255765577",
+            "guid": "cc80cea8-0ab7-4ad0-b3bf-0bb4575340aa",
+            "id": "18",
+            "name": "(2) WhatsApp",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://web.whatsapp.com/",
+            "visit_count": 1
+         }, {
+            "date_added": "13412702344743476",
+            "date_last_used": "13417495066627768",
+            "guid": "5d6d90d0-5806-4ccb-aaf6-73c621611233",
+            "id": "19",
+            "name": "Wipro TalentNext FutureSkills Prime 2025",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.futureskillsprime.in/info/group/?gid=1799&ingrp=1",
+            "visit_count": 6
+         }, {
+            "date_added": "13416224897504973",
+            "date_last_used": "0",
+            "guid": "eb5a8440-2f36-45e0-9abd-617a5bba7fb5",
+            "id": "20",
+            "name": "balab7084-wq (Bala Ganesh B)",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/balab7084-wq",
+            "visit_count": 1
+         }, {
+            "date_added": "13417885403902119",
+            "date_last_used": "13419097389931332",
+            "guid": "8ef5d1d8-3c40-4282-b4e0-6144175ca4b6",
+            "id": "21",
+            "name": "Home - Google Drive",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://drive.google.com/drive/home",
+            "visit_count": 1
+         }, {
+            "date_added": "13419004813566613",
+            "date_last_used": "0",
+            "guid": "7070a5da-4c95-4238-b04a-66fd35eedb17",
+            "id": "22",
+            "name": "Mepco Schlenk Engineering College",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://erp.mepcoeng.ac.in/Login.aspx",
+            "visit_count": 1
+         }, {
+            "date_added": "13419004837261753",
+            "date_last_used": "0",
+            "guid": "37541fec-b690-4f87-8f6f-5252edc54cab",
+            "id": "23",
+            "name": "YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/",
+            "visit_count": 1
+         }, {
+            "date_added": "13419006868953410",
+            "date_last_used": "0",
+            "guid": "be1316dc-559d-47ff-ab7e-678d9970b37e",
+            "id": "24",
+            "name": "Search - Microsoft Bing",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.bing.com/?FORM=Z9FD1",
+            "visit_count": 1
+         }, {
+            "date_added": "13437585936066081",
+            "date_last_used": "0",
+            "guid": "66a47b5c-714a-43c7-afaa-f00472afe625",
+            "id": "9",
+            "name": "Amazon.co.uk - Online Shopping",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "http://www.amazon.com/gp/ubp/oneButton/config/redirectHome?tagbase=hpbk-ubpl&ref=aagateway-edgebook-hp",
+            "visit_count": 0
+         }, {
+            "date_added": "13437585936065536",
+            "date_last_used": "0",
+            "guid": "80520c66-4a0b-42bc-b212-f7588991059a",
+            "id": "8",
+            "name": "Agoda",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://js.redirect.hp.com/jumpstation?bd=agoda&c=232&locale=*&pf=*&tp=edge&TYPE=3",
+            "visit_count": 0
+         }, {
+            "date_added": "13437585936063728",
+            "date_last_used": "0",
+            "guid": "c191df6a-c2e9-44ba-9630-9b11a19e99f5",
+            "id": "7",
+            "name": "McAfee Security",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.mcafee.com/consumer/v/browserfav/hp.html",
+            "visit_count": 0
+         } ],
+         "date_added": "13437585935439056",
+         "date_last_used": "0",
+         "date_modified": "13437585936066081",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13419094913264470",
+            "date_last_used": "0",
+            "guid": "ef118b88-e2e5-4e99-819a-d4e84fd93b3f",
+            "id": "25",
+            "name": "Meta AI",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.meta.ai/create",
+            "visit_count": 1
+         } ],
+         "date_added": "13437585935439056",
+         "date_last_used": "0",
+         "date_modified": "13419094913264470",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13437585935439056",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13437585935439056",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "5",
+         "name": "Workspaces",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCBUq0H2hAQAAEgAqGENUaXRGL292V3FrZ3M1Wjl3bGt0S1E9PUgDoAYHEq8BCBgSqgEKHGNHamx0VS9Sa1FWTklWcytTaHVvOXZuaEFSTT0SJGJlMTMxNmRjLTU1OWQtNDdmZi1hYjdlLTY3OGQ5OTcwYjM3ZRgAIAAoADCexLTT0jM4/Me009IzQPzHtNPSM0occHhCR2JKcDhIMEE1aGViTW5xQVd6dGFUei9ZPVohIh///7xkNE9WS09UU2ZCa2YrcDlyNmtrTGZBbXBJUkk9ZfTwSyjCPgJgBRKuAQgXEqkBChxVMjVmWFl2U2xUbEdVZFdTWWlpWUpxd0szUnc9EiQzNzU0MWZlYy1iNjkwLTRmODctOGY2Zi01MjUyZWRjNTRjYWIYACAAKAAwjr630tIzOPbFt9LSM0D2xbfS0jNKHHpPSWJobmNveFJ5SGlZOThrUkNvdTVVYU80bz1aICIe//95LzdHeDd3Rk42NVpnaGJrZTlWOVNONHR3bWc9ZUP4bYDCPgJgBRKuAQgWEqkBChxEano0QjZUL1NLbWFIQmJvN1BUbWRUZFJRVEk9EiQ3MDcwYTVkYS00Yzk1LTQyMzgtYjA0YS02NmZkMzVlZWRiMTcYACAAKAAwpIS20tIzOKWIttLSM0CliLbS0jNKHFJFTS9TOTlhM0YzSG5hemw4M2JiZ1dVanFSOD1aICIe//9WUHpuR0o1ZW5MSFJqbGxaZVpXRUpZeDNReDQ9ZbU+OlfCPgJgBRKMAQgFEocBChx3UkJyWkwrNlBBOWF2S2dqTlA3SlhETGNmdnM9EiRmN2JjZGE5Mi0yYjk0LTVmYWMtODdmOS1kNmU5Y2IxNmU4NGQYACAAKAAw4Y6NhKczOM+RjYSnM0DPkY2EpzNKHG5teDY1c1FEdnhJOFRnRWV2K0ErbnR0b1NuND1lAAAAAMI+AmAAEq4BCBUSqQEKHEx1UzNTQmg5cGVUNTdHMkRCVGdTVGFkclpZOD0SJDhlZjVkMWQ4LTNjNDAtNDI4Mi1iNGUwLTYxNDQxNzVjYTRiNhgAIAAoADDXvcj+0jM4o4fTvM4zQKOH07zOM0oceXNCbFZXVklGcWdTRWZHVEJlQU9pNUR5bmRJPVogIh7//0ZsaEc1SGV6aTgrL0EvU25waDdFYXNlMkQ2bz1lamTuEsI+AmAFEqwBCBkSpwEKHHA2UnJjOG42cUErYmxzZ0VVNTk2eTQyY3Zqbz0SJGVmMTE4Yjg4LWUyZTUtNGU5OS04MTlhLWQ0ZTg0ZmQ5M2IzZhgAIAAoADDZ1bH90jM4trqx/dIzQLa6sf3SM0ocZHFLSmEvWi90VkxwYXU3N3NrNWJtZHA4dGdNPVoeIhxTbHU4anAxSFlRdjJTQnlzTjJaaUgwSjN1Q0U9ZR5AO33CPgJgBRKuAQgUEqkBChxsRFhRQlEvQ1FSTFJxQldSejdvdjBqc1dCeU09EiRlYjVhODQ0MC0yZjM2LTQ1ZTAtOWFiZC02MTdhNWJiYTdmYjUYACAAKAAwov/tpMgzOLSL7qTIM0C0i+6kyDNKHGZnaWRMeEcwWHQ1UEtiVGNaU3c0YWs5Qm5oVT1aICIe//5JUEFKd0RKbE1yaWdUTUJralhqeW5RSWlONms9ZdeRPTnCPgJgBRKuAQgQEqkBChxsVlUzd1ZhdklZRHlNVjdsK3dmQ1U1enR0bWM9EiRiOGZjNTY0ZS1lOGJlLTRmYzQtYWVlNC04YmNhOWJhZTM1NWEYACAAKAAwoOG10tIzON71z7zkMkDe9c+85DJKHDI0dHV2NEVvT1c3eFQ2VHFWdVpDUi9LZ3JJOD1aICIe/9wzM3M2cFRtZElZaXNiTHI1VmUrczQ5TmI1N009ZUP4bYDCPgJgBRKuAQgREqkBChxFTCtTSFpWcGE2aENDRmNuQlN3dm4welA2TVU9EiQ1MDRjMDE5ZC1lNWRjLTRjODUtODk4OS0zNDM5ODM0MDY4MmQYACAAKAAwzcPKtr0zOLTt2IWjM0C07diFozNKHGxKbzVuMm5pTFJ2SUIzOUFSNERuV3NHb05oTT1aICIe//dpdldnNXNwQXV2blViLzFEd09YZi9mSU9jQms9ZfXTy6XCPgJgBRKtAQgOEqgBChw0d3J1NEZLeDlRRlFBbUJ0OFdaMkxGOTE1SDQ9EiQ5ZDc0NTY5My01MzEwLTRlMDYtYTkxYi1jZWRmNTE5YjczY2YYACAAKAAwmZmlu7czOJPujL/UMkCT7oy/1DJKHGZnQ1JOL2lHV2NkMHB0YVVBRk1LbjQxdDl1UT1aHyId/1VlU0VOSXA2RHRsM2RveUdqM0VMVzVhQW1wVT1lcy8gH8I+AmAFEq4BCBISqQEKHGtrSzN6Z0JBMHdLcDhHOXlWZlVBSGZKaWllOD0SJGNjODBjZWE4LTBhYjctNGFkMC1iM2JmLTBiYjQ1NzUzNDBhYRgAIAAoADDQ15SN1TM4mLLH8LAzQJiyx/CwM0ocMXBhQnl1ZkNGdkhUcytYakRzQTVTR0JCZm1JPVogIh7/+29TNFB0bDRHSzc0Y1lOM3RkaVRlMlVBRGk2dz1lDr2IPsI+AmAFEq4BCA8SqQEKHGtKSGs2Und0ZVVzNkxRL2FsVkNablJNK3hNST0SJGY4MDY0NzE2LTBmNzYtNDM3OC1iY2RkLTBjN2ZlODQ4NzVlOBgAIAAoADDYvYHU0jM4ya7o4tsyQMmu6OLbMkocOUNVeEZXWkY4TEdyOW1GUVJJRGpvckFtTHNZPVogIh7/uXBXUFVpU2tLekMwWDZ0c0o2NjdSQXNWd1d6cz1lhWftD8I+AmAFEq0BCA0SqAEKHE5TdWZESDBISjV6Si9URXlwZVZzU0dxYUpTaz0SJDk4Y2JlNDg1LTdlZDItNDFiMy05ZGZjLTE2YTQyNTkzYjY0ZhgAIAAoADDK7eGc0jM41fru9dEyQNX67vXRMkocdkxHZnZ5RDRGVE54WW1PREVtVWp3dTB4K2hnPVofIh39eTdBMXFSanJOcVBRUjUrSUV1UGtBMUMxc3VJPWW1PjpXwj4CYAUSrgEIExKpAQocVnF1TTZWQWJwdDNFbGhaLzFCNGo2YmZrRVRrPRIkNWQ2ZDkwZDAtNTgwNi00Y2NiLWFhZjYtNzNjNjIxNjExMjMzGAAgACgAMMW6woLNMziJg5aVuzNAiYOWlbszShxkYkNubWFTTU5kdnE4WTV6bXc4d04va1ZpbkE9WiAiHv/9aWlxcTBkMW44a29VSFJicWdqbW1DVCtFbWxrPWWysvjfwj4CYAUSjAEIAxKHAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkNGEwMTI1MDUtNTBhYy01NDk2LTliZmUtZWUzNjA2MDJlYTkzGAAgACgAMLrJ2pLuMTiI09qS7jFAiNPaku4xShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89ZQAAAADCPgJgABKtAQgMEqgBChxUaUFncklydXFtVlVPUU5nWWFsd2FIeFdYZlE9EiRhMzk3NzViMy05MWMwLTQ1ZTEtYmU4MC1jYjJmYTkxZTk0YmMYACAAKAAw3ZLbk84zOKSQ277LMkCkkNu+yzJKHFNNcWpuc1ZRYmJpb3o4dmpIYW1paktKSVM5MD1aHyId+2RSbksyUnJFODQveUNwY2Q0RTNRRE5wc1Btcz1lxFJYesI+AmAFEowBCAIShwEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJDI5MGQwNzdkLWZkMjEtNTA1Ny05ODkxLWYxMmQ0YzliZWNjNBgAIAAoADC1ydqS7jE4xdLaku4xQMXS2pLuMUocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PWUAAAAAwj4CYAASrQEICxKoAQocU3VBNUFyQzZWVFBQYk51b0JLQTg3bnYzdGVzPRIkZDBkOTdmYjAtNTBjYy00N2UxLWFkZDUtNjY2Njg1YmQzZTY3GAAgACgAMNmM5//SMziUzsu9yzJAlM7LvcsyShx3WmRBclNaS3YvM1AwTDZiaGtDS0l2VlYxa2M9Wh8iHe1FTXBiSE5XWldoay9PazE5ZWp3U05CMWtQdjg9ZUUQr8DCPgJgBRKsAQgKEqcBChwzT1NZMStuOTdoclplaXdNalRvNGxXbUFRckE9EiRhZWE5MDNhYi1hMmUyLTQwNjEtYThmZi0xYjZjMzJkY2M3ZTUYACAAKAAw8Nu9wtYzOPiysazRM0D4srGs0TNKHHRIeWxnYUpwaTNZUHpwWXlXOTFXdzNjcUNCND1aHiIcUUZQNTlYTUZRRVB4NWVBQW5GQzlkUHhDc1RrPWUiOZg2wj4CYAUSjAEIARKHAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRIkMWM3MTg5MmYtZTlkZC01OGQzLWIxMGYtNDA4NWJmZTQ1ZDE5GAAgACgAMLTJ2pLuMTiA0tqS7jFAgNLaku4xShxhUkNXTGdoRjliNUlucUtJRHZ1Si9qdlFrRmM9ZQAAAADCPgJgADAAOAA=",
+   "version": 1
+}

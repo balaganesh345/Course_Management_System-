@@ -150,8 +150,27 @@
                                 </a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="Instructors.aspx">
+                                    <i class="bi bi-person-video3 me-1"></i> Instructors
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link nav-link-custom" href="Enrollments.aspx">
                                     <i class="bi bi-people me-1"></i> Enrollments
+                                </a>
+                            </li>
+                        </asp:PlaceHolder>
+
+                        <!-- Navigation for Authenticated Instructor -->
+                        <asp:PlaceHolder ID="phInstructorNav" runat="server" Visible="false">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="Index.aspx">
+                                    <i class="bi bi-collection me-1"></i> All Courses
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="Enrollments.aspx">
+                                    <i class="bi bi-award me-1"></i> Student Completions
                                 </a>
                             </li>
                         </asp:PlaceHolder>

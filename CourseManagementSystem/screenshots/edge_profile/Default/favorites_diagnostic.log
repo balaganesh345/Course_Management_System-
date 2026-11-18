@@ -1,0 +1,36 @@
+2026-10-27 14:45:35.988: [INFO] CurrentProfilePath: D:\7 Semester\c# and .NET\Course_management\CourseManagementSystem\screenshots\edge_profile\Default
+2026-10-27 14:45:35.988: [INFO] Profiles total count: 1
+2026-10-27 14:45:35.988: [INFO] Profile: name=Profile 1 path=D:\7 Semester\c# and .NET\Course_management\CourseManagementSystem\screenshots\edge_profile\Default lastActive=null
+2026-10-27 14:45:35.988: [INFO] LastUsedProfileDir: D:\7 Semester\c# and .NET\Course_management\CourseManagementSystem\screenshots\edge_profile\Default
+2026-10-27 14:45:35.988: [INFO] VisibilityChanged: 0
+2026-10-27 14:45:36.065: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:45:36.065: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:45:36.066: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:45:36.066: [INFO] OnDoneLoading sync enabled: 0
+2026-10-27 14:45:36.066: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-27 14:45:36.066: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-27 14:45:36.066: [INFO] BookmarksSnapshot Startup total=3 bar=3 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-27 14:45:36.105: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-27 14:45:44.814: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-27 14:45:44.831: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-27 14:45:44.846: [INFO] Primary account changed.
+2026-10-27 14:45:44.846: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-10-27 14:45:44.885: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-27 14:45:45.003: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-27 14:46:15.859: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.860: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.860: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.860: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.861: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.861: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.862: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.862: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.862: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.863: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.863: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.863: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.864: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.864: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.865: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:15.865: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-27 14:46:17.565: [INFO] Sync initialization duration: 32193ms

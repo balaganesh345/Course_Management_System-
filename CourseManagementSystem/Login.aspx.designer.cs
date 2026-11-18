@@ -11,6 +11,7 @@ namespace CourseManagementSystem
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPassword;
         protected global::System.Web.UI.WebControls.Button btnLogin;
         protected global::System.Web.UI.WebControls.Button btnDemoAdmin;
+        protected global::System.Web.UI.WebControls.Button btnDemoInstructor;
         protected global::System.Web.UI.WebControls.Button btnDemoStudent;
     }
 }

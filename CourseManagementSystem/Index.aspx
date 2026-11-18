@@ -17,9 +17,14 @@
         </div>
         <div class="d-flex gap-2">
             <asp:PlaceHolder ID="phAdminActions" runat="server" Visible="false">
-                <a href="Create.aspx" class="btn btn-primary fw-semibold px-4 shadow-sm">
-                    <i class="bi bi-plus-circle me-1"></i> Add New Course
-                </a>
+                <asp:PlaceHolder ID="phAddCourseBtn" runat="server" Visible="false">
+                    <a href="Create.aspx" class="btn btn-primary fw-semibold px-4 shadow-sm">
+                        <i class="bi bi-plus-circle me-1"></i> Add New Course
+                    </a>
+                    <a href="Instructors.aspx" class="btn btn-outline-primary px-3">
+                        <i class="bi bi-person-video3 me-1"></i> Instructors
+                    </a>
+                </asp:PlaceHolder>
                 <a href="Enrollments.aspx" class="btn btn-outline-secondary px-3">
                     <i class="bi bi-people me-1"></i> View Enrollments
                 </a>

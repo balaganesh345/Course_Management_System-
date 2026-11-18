@@ -47,11 +47,13 @@
             </asp:Panel>
 
             <!-- Role Selector -->
+            <!-- Role Selector -->
             <div class="mb-3">
                 <label class="form-label fw-semibold small text-muted">Select Role <span class="text-danger">*</span></label>
                 <div class="d-flex gap-2">
-                    <asp:RadioButtonList ID="rblRole" runat="server" RepeatDirection="Horizontal" CssClass="d-flex gap-4">
+                    <asp:RadioButtonList ID="rblRole" runat="server" RepeatDirection="Horizontal" CssClass="d-flex gap-3 flex-wrap">
                         <asp:ListItem Text="<i class='bi bi-person-gear me-1'></i> Admin" Value="Admin" Selected="True" />
+                        <asp:ListItem Text="<i class='bi bi-person-video3 me-1'></i> Instructor" Value="Instructor" />
                         <asp:ListItem Text="<i class='bi bi-backpack me-1'></i> Student" Value="Student" />
                     </asp:RadioButtonList>
                 </div>
@@ -97,28 +99,32 @@
             <!-- Student Registration Link -->
             <div class="text-center pt-2 border-top">
                 <p class="text-muted small mb-0">
-                    Are you a new student? 
+                    Are you a new user? 
                     <a href="Register.aspx" class="text-primary fw-semibold text-decoration-none">Register for an account</a>
                 </p>
             </div>
 
             <!-- Quick Demo Credentials Box -->
-            <!-- <div class="bg-light p-3 rounded-3 border mt-4">
+            <div class="bg-light p-3 rounded-3 border mt-4">
                 <div class="d-flex align-items-center gap-1 mb-2">
                     <i class="bi bi-info-circle-fill text-primary"></i>
-                    <strong class="small text-dark">Pre-configured Demo Credentials:</strong>
+                    <strong class="small text-dark">Pre-configured Demo Accounts:</strong>
                 </div>
-                <div class="d-flex flex-column gap-1 small">
+                <div class="d-flex flex-column gap-2 small">
                     <div class="d-flex justify-content-between align-items-center">
                         <span><strong>Admin:</strong> <code class="text-primary">admin</code> / <code class="text-primary">admin123</code></span>
-                        <asp:Button ID="btnDemoAdmin" runat="server" Text="Fill Admin" CssClass="btn btn-xs btn-outline-primary py-0 px-2" CausesValidation="false" OnClick="btnDemoAdmin_Click" />
+                        <asp:Button ID="btnDemoAdmin" runat="server" Text="Fill Admin" CssClass="btn btn-sm btn-outline-primary py-0 px-2" CausesValidation="false" OnClick="btnDemoAdmin_Click" />
                     </div>
-                    <div class="d-flex justify-content-between align-items-center mt-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span><strong>Instructor:</strong> <code class="text-warning-emphasis">instructor</code> / <code class="text-warning-emphasis">instructor123</code></span>
+                        <asp:Button ID="btnDemoInstructor" runat="server" Text="Fill Instructor" CssClass="btn btn-sm btn-outline-warning text-dark py-0 px-2" CausesValidation="false" OnClick="btnDemoInstructor_Click" />
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
                         <span><strong>Student:</strong> <code class="text-success">student</code> / <code class="text-success">student123</code></span>
-                        <asp:Button ID="btnDemoStudent" runat="server" Text="Fill Student" CssClass="btn btn-xs btn-outline-success py-0 px-2" CausesValidation="false" OnClick="btnDemoStudent_Click" />
+                        <asp:Button ID="btnDemoStudent" runat="server" Text="Fill Student" CssClass="btn btn-sm btn-outline-success py-0 px-2" CausesValidation="false" OnClick="btnDemoStudent_Click" />
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 </asp:Content>

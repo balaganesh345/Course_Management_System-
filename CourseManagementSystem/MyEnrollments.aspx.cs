@@ -29,6 +29,7 @@ namespace CourseManagementSystem
                 int userId = Convert.ToInt32(Session["UserId"]);
                 string sql = @"
                     SELECT e.EnrollmentId, e.UserId, e.CourseId, e.EnrollmentDate, e.Status,
+                           e.IsCompleted, e.CompletionDate, e.QuizScore, e.QuizTotal,
                            c.CourseName, c.CourseCode, c.InstructorName, c.Category, 
                            c.DurationInWeeks, c.CourseFee, c.StartDate, c.EndDate
                     FROM Enrollments e

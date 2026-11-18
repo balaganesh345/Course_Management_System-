@@ -19,6 +19,8 @@ namespace CourseManagementSystem
             string email = txtEmail.Text.Trim();
             string password = txtPassword.Text.Trim();
 
+            string selectedRole = rblRegisterRole != null && rblRegisterRole.SelectedValue == "Instructor" ? "Instructor" : "Student";
+
             try
             {
                 // Check if username already exists
@@ -34,10 +36,10 @@ namespace CourseManagementSystem
                     return;
                 }
 
-                // Insert student user
+                // Insert user with selected role
                 string insertSql = @"
                     INSERT INTO Users (Username, Password, FullName, Email, Role, CreatedAt)
-                    VALUES (@Username, @Password, @FullName, @Email, 'Student', GETDATE());
+                    VALUES (@Username, @Password, @FullName, @Email, @Role, GETDATE());
                     SELECT SCOPE_IDENTITY();
                 ";
 
@@ -46,20 +48,21 @@ namespace CourseManagementSystem
                     new SqlParameter("@Username", username),
                     new SqlParameter("@Password", password),
                     new SqlParameter("@FullName", fullName),
-                    new SqlParameter("@Email", email)
+                    new SqlParameter("@Email", email),
+                    new SqlParameter("@Role", selectedRole)
                 };
 
                 object newId = DBHelper.ExecuteScalar(insertSql, insertParams);
 
                 if (newId != null && int.TryParse(newId.ToString(), out int userId))
                 {
-                    // Auto login the newly registered student
+                    // Auto login the newly registered user
                     Session["UserId"] = userId;
                     Session["Username"] = username;
                     Session["FullName"] = fullName;
-                    Session["UserRole"] = "Student";
+                    Session["UserRole"] = selectedRole;
 
-                    Response.Redirect("Index.aspx?msg=" + Server.UrlEncode("Welcome " + fullName + "! Your student account has been created."));
+                    Response.Redirect("Index.aspx?msg=" + Server.UrlEncode("Welcome " + fullName + "! Your " + selectedRole.ToLower() + " account has been created."));
                 }
                 else
                 {
